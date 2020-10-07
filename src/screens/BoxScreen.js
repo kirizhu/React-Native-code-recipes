@@ -15,24 +15,26 @@ const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 3,
     borderColor: 'black',
-    flexDirection: 'row',
-    height: 100,
-    justifyContent: 'flex-start',
+    height: 200,
+    alignItems: 'center',
   },
   textOneStyle: {
     borderWidth: 3,
     borderColor: 'red',
     flex: 1,
+    ...StyleSheet.absoluteFillObject,
   },
   textTwoStyle: {
     borderWidth: 3,
-    borderColor: 'red',
-    flex: 2,
+    borderColor: 'green',
+    flex: 1,
+    alignSelf: 'flex-end',
   },
   textThreeStyle: {
     borderWidth: 3,
-    borderColor: 'red',
-    flex: 3,
+    borderColor: 'blue',
+    flex: 1,
+    alignSelf: 'stretch',
   },
 });
 export default BoxScreen;
